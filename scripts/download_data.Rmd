@@ -19,6 +19,8 @@ options(scipen=999)
 # Create raw data folders 
 dir.create(here::here("raw_data"))
 
+dir.create(here::here("clean_data"))
+
 ```
 
 ## Download data files into local computer

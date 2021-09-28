@@ -1,0 +1,79 @@
+---
+title: "cleaning_osp2004"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+library(data.table)
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(lubridate)
+
+## Sets R not to use scientific notations
+options(scipen=999) 
+
+```
+
+
+## Read data
+
+```{r}
+osp_raw <- read_excel(here::here("raw_data/A.Wegmann_OSP2004.xlsx")) %>% 
+  clean_names()
+```
+
+
+## Checking data
+
+```{r}
+str(osp_raw)
+
+## Column that have "*" are read as character instead of numeric
+
+sort(unique(osp_raw$date))
+sort(unique(osp_raw$year))
+
+## Year is numeric and there is one value 2004.51 tat needs to be 2005
+
+## Check is any of the last columns has data
+unique(osp_raw$x1)
+unique(osp_raw$x2_24)
+unique(osp_raw$x2_25)
+unique(osp_raw$x3)
+unique(osp_raw$x4)
+
+## All NAs, no data.
+```
+
+
+
+## Cleaning data
+
+```{r}
+
+osp_clean <- osp_raw %>% 
+  ## Removing columns with no data
+  select(1:22) %>% 
+  ## Replace * for NA
+  mutate(across(11:22, ~replace(., . ==  "*" , NA)),
+         across(11:22, ~as.numeric(.)),
+         ## correcting year
+         year = case_when(year == 2004.51026392962 ~ 2005,
+                          T ~ year)) %>% 
+  rename(av_dbh = av_dbh_cm,
+         max_dbh = max_dbh_cm,
+         height = height_m)
+```
+
+
+## Save clean data
+
+```{r}
+write_csv(osp_clean, here::here("clean_data/osp2004.csv"))
+
+```
+
