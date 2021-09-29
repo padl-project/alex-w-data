@@ -1,0 +1,23 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+species		categorical				
+tree		character				
+treatment		categorical				
+treatment_code		numeric	!Add units here!			
+date		Date		!Add datetime specifier here!		
+days_since_last_sample		Date		!Add datetime specifier here!		
+total_days		Date		!Add datetime specifier here!		
+year		Date		!Add datetime specifier here!		
+fruit_code		numeric	!Add units here!			
+flower_code		numeric	!Add units here!			
+phenology		numeric	!Add units here!			
+av_dbh		numeric	!Add units here!			
+change_av_dbh		numeric	!Add units here!			
+max_dbh		numeric	!Add units here!			
+change_max_dbh		numeric	!Add units here!			
+height		numeric	!Add units here!			
+change_height		numeric	!Add units here!			
+light_gap_percent_2004		numeric	!Add units here!			
+light_gap_2005		numeric	!Add units here!			
+light_gap_change_percent		numeric	!Add units here!			
+seedlings		numeric	!Add units here!			
+change_seedlings		numeric	!Add units here!			

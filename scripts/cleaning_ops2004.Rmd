@@ -61,12 +61,16 @@ osp_clean <- osp_raw %>%
   ## Replace * for NA
   mutate(across(11:22, ~replace(., . ==  "*" , NA)),
          across(11:22, ~as.numeric(.)),
+         across(9:11, ~as.character(.)),
          ## correcting year
          year = case_when(year == 2004.51026392962 ~ 2005,
                           T ~ year)) %>% 
   rename(av_dbh = av_dbh_cm,
          max_dbh = max_dbh_cm,
          height = height_m)
+## Check
+str(osp_clean)
+
 ```
 
 

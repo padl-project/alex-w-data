@@ -1,0 +1,7 @@
+attributeName	code	definition
+species	Barringtonia asiatica	
+species	Guetterda speciosa	
+species	Hernandia sonora	
+species	Pisonia grandis	
+treatment	A	
+treatment	B	
