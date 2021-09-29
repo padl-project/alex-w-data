@@ -1,0 +1,37 @@
+---
+title: "Upload files to Drive"
+author: "Camila Vargas"
+date: "9/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(googledrive)
+library(tidyverse)
+
+```
+
+## Upload to dive
+```{r}
+
+## Finalized data folder url
+final_files_url <- "https://drive.google.com/drive/folders/194wHMNkk3QarAewjiYxl0sZEU12AvFRW"
+
+## Upload weather data
+drive_upload(media = here::here("clean_data/2004_2008_osp.csv"),
+             path = as_id(final_files_url),
+             name = "2004_2008_osp.csv",
+             type = "csv")
+
+
+## Upload metadata
+drive_upload(media = here::here("EML/metadata_doc.docx"),
+             path = as_id(final_files_url),
+             name = "wegmann_osp_metadata.docx",
+             type = "docx")
+
+```
+
+

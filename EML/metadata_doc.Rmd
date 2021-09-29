@@ -1,6 +1,6 @@
 ---
 title: "OSP Data 2004"
-author: "Alex Wemann"
+author: "Alex Wegmann"
 date: "9/29/2021"
 output: word_document
 ---
@@ -76,7 +76,7 @@ flextable::flextable(creator_table) %>%
 
 _Who should a data user contact with questions about this data?_
 _There must be at least one person or organization name to serve as the contact for this dataset._
-_You may also list other personnel who participated in the project (such as field crew, lab tech, data entry, etc.) in this table with optional fields e-mail addresses, organization, and ORCID ID._
+_You may also list other personnel who participated in the project (such as field crew, lab tech, data entry, etc.) in this table with optional fields, email addresses, organization, and ORCID ID._
 
 
 **We highly encourage you to create an ORCID if you don't already have one.** [Find more information here.](https://info.orcid.org/what-is-orcid/)
@@ -114,13 +114,13 @@ _**Please highlight** the license for the release of your data. Click on the lic
 
 [CCO](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**Recommended**. The easier you make it for people to reuse your data, the more likely it is that your data will be reused.
+**Recommended**. The easier it is for people to reuse your data, the more likely it is that your data will be reused.
 
 Public Domain Dedication, aka “No Rights Reserved.” This one means, “If I hold copyright in this, I waive it. And if we’re dealing with a country where we can’t waive copyright, here’s a broad public license with no attribution requirement. And just as a backup, I also promise not to sue you for copyright or related stuff if you use this.”
 
 or
 
-[CCBY](https://creativecommons.org/licenses/by/4.0/)
+[CC BY](https://creativecommons.org/licenses/by/4.0/)
 
 Attribution is required. CC licenses require that those who reuse a work provide attribution to the work’s creator by retaining “identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated).” This makes great sense for photos, articles, and music that creators share with a CC license.
 
@@ -188,8 +188,8 @@ flextable::flextable(timeframe_table) %>%
 
 ## 10. Geographic location
 
-_Use decimal degrees to define a point or a bounding box. **Copy this block to add multiple points or areas.**_
-Every point you add will be displayed on a map once the data package is published. [See Example here](https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-sbc&identifier=108)
+_Use decimal degrees to define a point or a bounding box._
+Every point you add will be displayed on a map once the data package is published. [See example here](https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-sbc&identifier=108)
 
 **Verbal description:** Palmyra Atoll
 
@@ -206,6 +206,21 @@ flextable(geo_loc_table) %>%
 
 ```
 
+**Copy this block to add multiple points or areas.**_
+
+**Verbal description:**
+
+
+```{r, geographic location table 2, echo = FALSE, message= FALSE, warning= FALSE}
+
+coordinate <- c(" ", " ", " ", " ")
+
+geo_loc_table_2 <- tibble(Directions, coordinate)
+
+flextable(geo_loc_table_2) %>% 
+  autofit(add_w = 0.2, add_h = 0.1, part = c("body", "header"), unit = "in")
+
+```
 
 ## 11. Methods
 _Be specific about the study design and field and lab methods for collecting and processing the data. Include instrument descriptions and protocol citations._
@@ -215,7 +230,7 @@ Find an example [in this link](https://docs.google.com/document/d/1KdHJObHl5Bxxr
 
 ## 12. Data Provenance
 
-_Is this data derived from other data? If so, you will want to document this information so users know where this data came from.  Please specify the source datasets used in the below provenance table, preferably with their DOI or URL.  [Here an example of a dataset derived from several others](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.101.3)._
+_Is this data derived from other data? If so, you will want to document this information, so users know where this data came from.  Please specify the source datasets used in the below provenance table, preferably with their DOI or URL.  [Here is an example of a dataset derived from several others](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.101.3)._
 
 
 
@@ -250,9 +265,9 @@ Each row in the below table describes one column in your data table.  Complete e
 
 - **Description:** Please give a specific definition of the column name. This can be lengthy.
 - **Unit:** Identify units for all numeric variables. All rows where there is an * under the unit column must be filled in with a unit.
-- **Date format:** Please tell us exactly how the date and time are formatted: e.g. mm/dd/yyyy hh:mm:ss, plus the time zone and whether or not daylight savings was observed.  ISO date format of YYYY-MM-DD or YYYY-MM-DD hh:mm:ss is preferred.
+- **Date format:** Please tell us exactly how the date and time are formatted: e.g., mm/dd/yyyy hh:mm:ss, plus the time zone and whether daylight savings were observed.  ISO date format of YYYY-MM-DD or YYYY-MM-DD hh:mm:ss is preferred.
 - **Missing value code:** If a code for ‘no data’ is used, please specify: e.g., -99999, NA
-- **Missing value code Explanation:** Why are these values missing? e.g: value not available, value not recorded.
+- **Missing value code Explanation:** Why are these values missing? e.g.: value not available, value not recorded.
 
 - **Table name:** (Add a short name for this table)
 - **Table description:** (Add brief description of table contents)
@@ -367,7 +382,7 @@ flextable::flextable(script_info) %>%
 
 
 ## 16. Other objects (misc.)
-_List any other objects (e.g. .zip, .pdf, etc.) you would like to archive._
+_List any other objects (e.g., .zip, .pdf, etc.) you would like to archive._
 
 **Note:** At the moment, we are not including any photographic data.
 
