@@ -61,7 +61,8 @@ osp_clean <- osp_raw %>%
   ## Replace * for NA
   mutate(across(11:22, ~replace(., . ==  "*" , NA)),
          across(11:22, ~as.numeric(.)),
-         across(9:11, ~as.character(.)),
+         across(9:11, ~as.factor(.)),
+         across(2, ~as.factor(.)),
          ## correcting year
          year = case_when(year == 2004.51026392962 ~ 2005,
                           T ~ year)) %>% 
