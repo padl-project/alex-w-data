@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" packageId="edi.1027.1" system="https://pasta.edirepository.org" 
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd"> 
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=palmyra_project,o=EDI,dc=edirepository,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Native tree growth and reproduction in response to reduction in the coconut palm (Cocos nucifera) canopy at Palmyra Atoll
+</title>
+    <creator>
+      <individualName>
+        <givenName>Alex</givenName>
+        <surName>Wegmann</surName>
+      </individualName>
+      <organizationName>The Nature Conservancy</organizationName>
+      <electronicMailAddress>alex.wegmann@tnc.org</electronicMailAddress>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Camila</givenName>
+        <surName>Vargas Poulsen</surName>
+      </individualName>
+      <organizationName>PADL Data Manager, Univerity of California Santa Barbara</organizationName>
+      <electronicMailAddress>camilavargas@ucsb.edu</electronicMailAddress>
+      <role>associated party</role>
+    </associatedParty>
+    <pubDate>2021-11-16</pubDate>
+    <abstract>
+      <para>
+    These data describe competition for light (open solar path) between
+    introduced coconut palm trees (<emphasis>Cocos nucifera</emphasis>)
+    and native tree species between 2004 and 2008 at Palmyra Atoll,
+    Northern Line Islands, Pacific Ocean. Data are contained in one
+    table, including values from the start, end, and intermediate
+    samples.  The dataset measures the change in tree growth (DBH and
+    height) and reproductive potential (flower and fruit production) in
+    relation to time and open solar path value. Two treatments are
+    considered: OSP values less than 50% created by <emphasis>C.
+    nucifera</emphasis> removal, and OSP values greater than 50%.  
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>Palmyra Atoll</keyword>
+      <keyword>Above ground resource competition</keyword>
+      <keyword>Cocos nucifera</keyword>
+      <keyword>Tree</keyword>
+      <keyword>Reproduction</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+    This information is released under the Creative Commons license -
+    Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+    The consumer of these data (</para>
+      <para>
+        <emphasis></emphasis>
+      </para>
+      <para> herein) is
+    required to cite it appropriately in any publication that results
+    from its use. The Data User should realize that these data may be
+    actively used by others for ongoing research and that coordination
+    may be necessary to prevent duplicate publication. The Data User is
+    urged to contact the authors of these data if any questions about
+    methodology or results occur. Where appropriate, the Data User is
+    encouraged to consider collaboration or co-authorship with the
+    authors. The Data User should realize that misinterpretation of data
+    may occur if used out of context of the original study. While
+    substantial efforts are made to ensure the accuracy of data and
+    associated documentation, complete accuracy of data sets cannot be
+    guaranteed. All data are made available </para>
+      <para>
+        <emphasis></emphasis>
+      </para>
+      <para> The
+    Data User should be aware, however, that data are updated
+    periodically and it is the responsibility of the Data User to check
+    for new versions of the data. The data authors and the repository
+    where these data were obtained shall not be liable for damages
+    resulting from any use or misinterpretation of the data. Thank you.
+  </para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Palmyra Atoll</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-162.083</westBoundingCoordinate>
+          <eastBoundingCoordinate>-162.043</eastBoundingCoordinate>
+          <northBoundingCoordinate>5.88333</northBoundingCoordinate>
+          <southBoundingCoordinate>5.871</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>38203</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>39545</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>Completed</description>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Alex</givenName>
+        <surName>Wegmann</surName>
+      </individualName>
+      <organizationName>The Nature Conservancy</organizationName>
+      <electronicMailAddress>alex.wegmann@tnc.org</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+    Originating in Southeast Asia, coconut palm trees (<emphasis>Cocos
+    nucifera</emphasis>) have been introduced to or naturalized on
+    tropical islands and coastal areas throughout the world.
+    <emphasis>C. nucifera</emphasis> is a very successful early
+    successional colonizer of marine shoreline habitat and competes with
+    native vegetation for above- and below-ground resources. This study
+    uses field measurements to estimate the impact, measured in growth
+    and reproductive potential, of competition for light (open solar
+    path) by <emphasis>C. nucifera</emphasis> on tree species native
+    islands in the central Pacific. 
+  </para>
+          <para>
+    PADL repository that cleans and organizes original raw data:
+    https://github.com/padl-project/alex-w-data
+  </para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>No project title to report</title>
+      <personnel>
+        <individualName>
+          <givenName>Alex</givenName>
+          <surName>Wegmann</surName>
+        </individualName>
+        <organizationName>The Nature Conservancy</organizationName>
+        <electronicMailAddress>alex.wegmann@tnc.org</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <funding>No funding to report</funding>
+    </project>
+    <dataTable>
+      <entityName>Palmyra Atoll Cocos nucifera Open Solar Path impact study</entityName>
+      <entityDescription>Native tree growth and reproduction in response to reduction in the coconut palm (Cocos nucifera) canopy at Palmyra Atoll
+</entityDescription>
+      <physical>
+        <objectName>2004_2008_Awegmann_Palmyra_Atoll_OSP.csv</objectName>
+        <size unit="bytes">39983</size>
+        <authentication method="MD5">487718c565ca60d491b26818a81a2b79</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>NA2004_2008_Awegmann_Palmyra_Atoll_OSP.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>species</attributeName>
+          <attributeDefinition>Scientific name of sampled species</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Scientific name of sampled species</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>tree</attributeName>
+          <attributeDefinition>Tree identifier composed by first letter of scientific name and number of surveyed tree</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Tree identifier composed by first letter of scientific name and number of surveyed tree</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>treatment</attributeName>
+          <attributeDefinition>Value of open solar path (OSP)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Value of open solar path (OSP)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>treatment_code</attributeName>
+          <attributeDefinition>Code referring to each type of treatment</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code referring to each type of treatment</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>date</attributeName>
+          <attributeDefinition>Date sample was measured</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>days_since_last_sample</attributeName>
+          <attributeDefinition>Number of days since the tree was sampled last</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">194</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>total_days</attributeName>
+          <attributeDefinition>Elapsed days since beginning of study</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">976</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>year</attributeName>
+          <attributeDefinition>Year when measurement happened</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">2004</minimum>
+                  <maximum exclusive="false">2008</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fruit_code</attributeName>
+          <attributeDefinition>Code that identifies number of fruits on a tree</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code that identifies number of fruits on a tree</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flower_code</attributeName>
+          <attributeDefinition>Code that identifies number of flower clusters on a tree</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code that identifies number of flower clusters on a tree</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>phenology</attributeName>
+          <attributeDefinition>Either if the tree has fruits, flowers, both or none</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Either if the tree has fruits, flowers, both or none</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>av_dbh</attributeName>
+          <attributeDefinition>Average diameter at breast height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.8</minimum>
+                  <maximum exclusive="false">96.3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>change_av_dbh</attributeName>
+          <attributeDefinition>Difference in average diameter at breast height between current measurement and previous measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.200000000000003</minimum>
+                  <maximum exclusive="false">7.59999999999999</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>max_dbh</attributeName>
+          <attributeDefinition>Maximum diameter at breast height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">2.8</minimum>
+                  <maximum exclusive="false">103.3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>change_max_dbh</attributeName>
+          <attributeDefinition>Difference in maximum diameter at breast height between current measurement and previous measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.199999999999999</minimum>
+                  <maximum exclusive="false">7.59999999999999</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>height</attributeName>
+          <attributeDefinition>Tree height</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">3.9</minimum>
+                  <maximum exclusive="false">21.5</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>change_height</attributeName>
+          <attributeDefinition>Difference in height between current measurement and previous measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-1.8</minimum>
+                  <maximum exclusive="false">3.8</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>light_gap_percent_2004</attributeName>
+          <attributeDefinition>Measured percent open solar path at onset of study</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>percentage</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">0.9698</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>light_gap_2005</attributeName>
+          <attributeDefinition>Measured percent open solar path at 2005 sample</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>percentage</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.013</minimum>
+                  <maximum exclusive="false">0.9698</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>light_gap_change_percent</attributeName>
+          <attributeDefinition>Measured percent change in open solar path between 2004 and 2008</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>percentage</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-0.1898</minimum>
+                  <maximum exclusive="false">0.2262</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>seedlings</attributeName>
+          <attributeDefinition>Number of same-species seedlings within 10m of tree base</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>change_seedlings</attributeName>
+          <attributeDefinition>Difference in number of seedlings between current measurement and previous measurement</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+                <bounds>
+                  <minimum exclusive="false">-2</minimum>
+                  <maximum exclusive="false">59</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>385</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="number" name="number" parentSI="" unitType="dimensionless">
+          <description>a number</description>
+        </unit>
+        <unit id="centimeter" name="centimeter" parentSI="meter" unitType="">
+          <description>.01 meters</description>
+        </unit>
+        <unit id="meter" name="meter" parentSI="" unitType="length">
+          <description>SI unit of length</description>
+        </unit>
+        <unit id="percentage" name="percentage" parentSI="" unitType="">
+          <description/>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
