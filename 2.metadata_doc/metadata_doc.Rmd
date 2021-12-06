@@ -276,8 +276,8 @@ Each row in the below table describes one column in your data table.  Complete e
 ```{r, echo = FALSE, message= FALSE, warning= FALSE}
 
 ## Location of datasets in the package
-path_data <- here::here("clean_data")
-path_templates <- here::here("EML/data_attributes")
+path_data <- here::here("7.clean_data")
+path_templates <- here::here("3.data_attributes")
 
 
 ## Creating the attribute .txt

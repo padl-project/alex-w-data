@@ -38,7 +38,9 @@ people <- as.data.frame(read_xlsx  (wb, sheet = "ListPeople", na=""))
 creator <-dataset %>%
   filter(datasetid==dataset_id) %>%
   select(project_PI,project_funding_title,project_funding_code) %>%
-  rename(peopleid=project_PI,projectTitle=project_funding_title,fundingNumber=project_funding_code) %>%
+  rename(peopleid=project_PI,
+         projectTitle=project_funding_title,
+         fundingNumber=project_funding_code) %>%
   mutate(authorshiprole="PI") %>%
   bind_rows(creator_raw) %>%
   left_join(people,by="peopleid")

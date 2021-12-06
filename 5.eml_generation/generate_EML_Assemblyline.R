@@ -9,20 +9,27 @@ generate_EML_Assemblyline <- function(project_path = project_path,
 entity <- excel_input$entities
 
 #test to see if there is data table or other entity
-if (length(entity[entity$entitytype=="dataTable","filename"])!=0) {datatable_present=1} else {datatable_present=0}
-if (length(entity[entity$entitytype=="otherEntity","filename"])!=0) {otherentity_present=1} else {otherentity_present=0}
+if (length(entity[entity$entitytype=="dataTable","filename"])!=0) {datatable_present=1} 
+else {datatable_present=0}
 
-#create a template
+if (length(entity[entity$entitytype=="otherEntity","filename"])!=0) {otherentity_present=1} 
+else {otherentity_present=0}
+
+#create a template - An empty list with arguments for make_eml function
 eal_inputs <- EMLassemblyline::template_arguments(
   empty = T, 
   data.path = paste0(getwd(), "/7.clean_data"), #project_path, 
-  data.table = if (datatable_present==1) {entity[entity$entitytype=="dataTable","filename"]} else {NULL},
-  other.entity = if (otherentity_present==1){entity[entity$entitytype=="otherEntity","filename"]} else {NULL}
+  data.table = if (datatable_present==1) 
+    {entity[entity$entitytype=="dataTable","filename"]} 
+  else {NULL},
+  other.entity = if (otherentity_present==1)
+  {entity[entity$entitytype=="otherEntity","filename"]} 
+  else {NULL}
 )
 
-#dataset level
+#dataset level - Filling in the list created above with data in excel_inputs (metadata)
 eal_inputs$dataset.title <- excel_input$dataset$title
-eal_inputs$data.path = eal_inputs$eml.path <- project_path
+#eal_inputs$data.path = eal_inputs$eml.path <- project_path
 eal_inputs$data.path <- paste0(getwd(), "/7.clean_data")
 #eal_inputs$eml.path <- project_path
 eal_inputs$maintenance.description <- 'Completed'
