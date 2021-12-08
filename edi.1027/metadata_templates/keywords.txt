@@ -1,1 +1,6 @@
 keyword	keywordThesaurus
+Palmyra Atoll	none
+Above ground resource competition	none
+Cocos nucifera	none
+Tree	none
+Reproduction	none

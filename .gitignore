@@ -44,3 +44,5 @@ vignettes/*.pdf
 
 ## omit clean_data folder and everything inside
 7.clean_data/
+
+edi.1027/data_objects/

@@ -1,1 +1,5 @@
 givenName	middleInitial	surName	organizationName	electronicMailAddress	userId	role	projectTitle	fundingAgency	fundingNumber
+Alex		Wegmann	The Nature Conservancy	alex.wegmann@tnc.org	https://orcid.org/0000-0002-0595-7552	creator			
+Alex		Wegmann	The Nature Conservancy	alex.wegmann@tnc.org	https://orcid.org/0000-0002-0595-7552	contact			
+Camila		Vargas Poulsen	Palmyra Atoll Data Library	camilavargas@ucsb.edu		associated party			
+Dr. Don		Drakw	University of Hawaii	ddrake@hawaii.edu	https://orcid.org/0000-0002-9002-2881	collaborator			

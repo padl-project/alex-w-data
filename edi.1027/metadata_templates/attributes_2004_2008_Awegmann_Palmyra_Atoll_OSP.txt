@@ -1,0 +1,23 @@
+attributeName	attributeDefinition	class	unit	dateTimeFormatString	missingValueCode	missingValueCodeExplanation
+species	Scientific name of sampled species	character				
+tree	Tree identifier composed by first letter of scientific name and number of surveyed tree	character				
+treatment	Value of open solar path (OSP)	categorical				
+treatment_code	Code referring to each type of treatment	categorical				
+date	Date sample was measured	Date		YYYY-MM-DD		
+days_since_last_sample	Number of days since the tree was sampled last	numeric	number			
+total_days	Elapsed days since beginning of study	numeric	number			
+year	Year when measurement happened	numeric	number			
+fruit_code	Code that identifies number of fruits on a tree	categorical				
+flower_code	Code that identifies number of flower clusters on a tree	categorical				
+phenology	"Either if the tree has fruits, flowers, both or none"	categorical				
+av_dbh	Average diameter at breast height	numeric	centimeter			
+change_av_dbh	Difference in average diameter at breast height between current measurement and previous measurement	numeric	centimeter			
+max_dbh	Maximum diameter at breast height	numeric	centimeter			
+change_max_dbh	Difference in maximum diameter at breast height between current measurement and previous measurement	numeric	centimeter			
+height	Tree height	numeric	meter			
+change_height	Difference in height between current measurement and previous measurement	numeric	meter			
+light_gap_percent_2004	Measured percent open solar path at onset of study	numeric	percent			
+light_gap_2005	Measured percent open solar path at 2005 sample	numeric	percent			
+light_gap_change_percent	Measured percent change in open solar path between 2004 and 2008	numeric	percent			
+seedlings	Number of same-species seedlings within 10m of tree base	numeric	number			
+change_seedlings	Difference in number of seedlings between current measurement and previous measurement	numeric	number			

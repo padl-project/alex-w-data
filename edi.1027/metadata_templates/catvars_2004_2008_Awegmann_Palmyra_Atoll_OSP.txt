@@ -1,0 +1,18 @@
+attributeName	code	definition
+treatment	A	OSP value between 51-100%
+treatment	B	OSP value between 0-50%
+treatment_code	1	Treatment A
+treatment_code	2	Treatment B
+fruit_code	0	No fruit on tree
+fruit_code	1	1-10 fruits on tree
+fruit_code	2	11-30 fruits on tree
+fruit_code	3	31-90 fruits on tree
+fruit_code	4	91+ fruits on tree
+flower_code	0	No flowers on tree
+flower_code	1	1-10 flowers or flower clusters on tree
+flower_code	2	11-30 flowers or flower clusters on tree
+flower_code	3	31-90 flowers or flower clusters on tree
+flower_code	4	91+ flowers or flower clusters on tree
+phenology	0	No fruit or flowers on tree
+phenology	1	Only flowers on tree
+phenology	2	Fruit and flowers on tree
