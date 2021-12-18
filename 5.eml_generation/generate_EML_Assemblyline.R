@@ -9,11 +9,9 @@ generate_EML_Assemblyline <- function(project_path = project_path,
 entity <- excel_input$entities
 
 #test to see if there is data table or other entity
-if (length(entity[entity$entitytype=="dataTable","filename"])!=0) {datatable_present=1} 
-else {datatable_present=0}
+if (length(entity[entity$entitytype=="dataTable","filename"])!=0) {datatable_present=1} else {datatable_present=0}
 
-if (length(entity[entity$entitytype=="otherEntity","filename"])!=0) {otherentity_present=1} 
-else {otherentity_present=0}
+if (length(entity[entity$entitytype=="otherEntity","filename"])!=0) {otherentity_present=1} else {otherentity_present=0}
 
 #create a template - An empty list with arguments for make_eml function
 eal_inputs <- EMLassemblyline::template_arguments(
