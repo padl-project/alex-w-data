@@ -32,7 +32,7 @@ source(paste0(getwd(), '/5.eml_generation/generate_EML_Assemblyline.R'))
 #read the metadata content out of xlsx - creates a list with all the tabs in the xlsx file
 metadata <- get_meta_xlsx(
   folder_path = folder_path,
-  dataset_id = dataset_id) 
+  dataset_id = dataset_id)
 
 #fill the EML content into the template
 eml_in_template <- generate_EML_Assemblyline(
