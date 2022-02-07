@@ -22,7 +22,7 @@ options(scipen=999)
 ## Read data
 
 ```{r}
-osp_raw <- read_excel(here::here("raw_data/A.Wegmann_OSP2004.xlsx")) %>% 
+osp_raw <- read_excel(here::here("6.raw_data/A.Wegmann_OSP2004.xlsx")) %>% 
   clean_names()
 ```
 
@@ -65,7 +65,8 @@ osp_clean <- osp_raw %>%
          across(2, ~as.factor(.)),
          ## correcting year
          year = case_when(year == 2004.51026392962 ~ 2005,
-                          T ~ year)) %>% 
+                          T ~ year),
+         date = date(date)) %>% 
   rename(av_dbh = av_dbh_cm,
          max_dbh = max_dbh_cm,
          height = height_m)
@@ -78,7 +79,7 @@ str(osp_clean)
 ## Save clean data
 
 ```{r}
-write_csv(osp_clean, here::here("clean_data/osp2004.csv"))
+write_csv(osp_clean, here::here("7.clean_data/awegmann_palmyra_atoll_osp_2004_2008.csv"))
 
 ```
 

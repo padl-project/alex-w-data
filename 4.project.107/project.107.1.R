@@ -27,13 +27,12 @@ folder_path<- here::here(paste0("4.project.", dataset_id,"/"))
 source(paste0(getwd(), '/5.eml_generation/download_metadata.R'))
 source(paste0(getwd(), '/5.eml_generation/get_meta_xlsx.R'))
 source(paste0(getwd(), '/5.eml_generation/generate_EML_Assemblyline.R'))
-source(paste0(getwd(), '/5.eml_generation/write_eml_excel.R'))
 
 
-#read the metadata content out of xlsx
+#read the metadata content out of xlsx - creates a list with all the tabs in the xlsx file
 metadata <- get_meta_xlsx(
   folder_path = folder_path,
-  dataset_id = dataset_id) 
+  dataset_id = dataset_id)
 
 #fill the EML content into the template
 eml_in_template <- generate_EML_Assemblyline(
@@ -42,6 +41,5 @@ eml_in_template <- generate_EML_Assemblyline(
   dataset_id_input = dataset_id)
 
 # Export EML --------------------------------------------------------------------
-write_eml_excel(eml_in_template)
-
+do.call(make_eml, eml_in_template[names(eml_in_template) %in% names(formals(make_eml))])
 
